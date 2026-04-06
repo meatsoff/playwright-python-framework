@@ -3,7 +3,12 @@ VALID_USER = {
     "password": "secret_sauce"
 }
 
-INVALID_USER = {
+LOCKED_USER = {
     "username": "locked_out_user",
-    "password": "wrong_password"
+    "password": "secret_sauce"
+}
+
+INVALID_USER = {
+    "username": "invalid_user",
+    "password": "invalid_password"
 }

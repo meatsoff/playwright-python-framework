@@ -10,6 +10,11 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    env:
+      HEADLESS: "true"
+      BROWSER: "chromium"
+      BASE_URL: "https://www.saucedemo.com/"
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -26,8 +31,6 @@ jobs:
           python -m playwright install --with-deps
 
       - name: Run tests
-        env:
-          HEADLESS: "true"
         run: |
           pytest
 

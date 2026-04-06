@@ -1,2 +1,4 @@
 2026-04-06 12:22:54,104 | INFO | conftest | Browser launched
 2026-04-06 12:22:57,062 | INFO | conftest | Browser closed
+2026-04-06 12:45:24,471 | INFO | conftest | Browser launched: chromium, headless=False
+2026-04-06 12:45:35,173 | INFO | conftest | Browser closed
