@@ -1,3 +1,4 @@
+from config.settings import Settings
 from pages.base_page import BasePage
 
 
@@ -8,7 +9,7 @@ class LoginPage(BasePage):
     ERROR_MESSAGE = "[data-test='error']"
 
     def open(self):
-        self.navigate("https://www.saucedemo.com/")
+        self.navigate(Settings.BASE_URL)
 
     def login(self, username, password):
         self.fill(self.USERNAME_INPUT, username)
